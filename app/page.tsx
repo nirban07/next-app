@@ -1,5 +1,6 @@
 import { Github, Linkedin, Twitter } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import {
   Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenu, NavbarMenuItem, NavbarMenuToggle
@@ -16,9 +17,9 @@ export default function Home() {
         <p>FullStack developer</p>
         <p className='w-60'>Trying to make the web prettier one property at a time</p>
         <div className='flex gap-4'>
-          <Linkedin />
-          <Github />
-          <Twitter />
+          <Link href="https://www.linkedin.com/in/nirbanroy/" target='_blank'><Linkedin /></Link>
+          <Link href="https://github.com/nirban07" target='_blank'><Github /></Link>
+          <Link href="https://twitter.com/NirbanRoy19" target='_blank'><Twitter /></Link>
         </div>
 
       </div>
